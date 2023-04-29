@@ -1,0 +1,160 @@
+
+body {
+  font-family: "Marcellus", serif;
+  width: auto;
+  height: auto;
+}
+
+h1 {
+  color: #fcf9f4;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 28px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+ul {
+  padding: 0;
+  margin-top: 8px;
+}
+li {
+  font-size: 16px;
+  font-weight: 400;
+  height: 19px;
+  line-height: 1;
+  list-style: none;
+
+  color: #252d46;
+  font-weight: bolder;
+}
+.col-5 {
+  padding-left: 0;
+}
+.col-6 {
+  padding-right: 0;
+}
+#first-li {
+  margin-bottom: 5px;
+}
+#second-li {
+  margin-bottom: 5px;
+}
+#third-li {
+  margin-bottom: 5px;
+}
+footer {
+  text-align: center;
+  color: #c1c1c1;
+}
+#button-current-position {
+  padding: 0px;
+  margin-bottom: 10px;
+  color: #252d46;
+  font-weight: bold;
+  text-decoration: none;
+}
+#button-current-position:hover {
+  text-decoration: underline;
+  color: #4a5e99;
+}
+.current-temp {
+  margin: 0 auto;
+  padding-right: 0;
+}
+.nice-picture {
+  height: 80px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+#description-weather {
+  text-transform: capitalize;
+}
+
+.weather-app {
+  border: 1px solid #fcf9f4;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 500px;
+}
+.form-control {
+  opacity: 0.7;
+}
+.form-control:hover {
+  background: #494a6d;
+  color: white;
+}
+.current-day {
+  color: #252d46;
+  font-size: 16px;
+  margin: 0;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+#current-weather-information {
+  margin-bottom: 10px;
+}
+
+.weather-icon {
+  height: 64px;
+  width: 64px;
+  float: left;
+  padding-top: 5px;
+}
+
+.temperature {
+  color: #fcf9f4;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+.units {
+  position: relative;
+  top: -32px;
+}
+
+.weather-search-form {
+  margin-bottom: 15px;
+}
+.day {
+  text-align: center;
+}
+.four-day-forecast {
+  padding: 15px;
+  margin: 0 auto;
+  background-color: rgba(255, 253, 253, 0.2);
+  border-radius: 10px;
+}
+.day-name {
+  color: #252d46;
+  font-weight: bolder;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.max {
+  color: #252d46;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 15px;
+}
+.min {
+  color: #4a5e99;
+
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 15px;
+}
+.name {
+  text-decoration: none;
+  color: #e5cd9e;
+}
+
+.name:hover {
+  text-decoration: underline;
+  color: #ffc97c;
+  cursor: pointer;
+}

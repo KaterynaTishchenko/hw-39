@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100 d-display-block">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Weather App</title>
+  </head>
+  <style>
+    body {
+      background-image: url("images/picture1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="weather-search-form" id="weather-form-engine">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Type a city..."
+                class="form-control"
+                autofocus="on"
+                autocomplete="off"
+                id="form-conrol-engine"
+              />
+            </div>
+
+            <div class="col-3">
+              <input type="submit" value="Search" class="form-control" />
+            </div>
+          </div>
+        </form>
+
+        <button type="button" class="btn btn-link" id="button-current-position">
+          Define my current position
+        </button>
+
+        <div class="main-information">
+          <div class="row">
+            <div class="col-6">
+              <h1 id="current-city-country"></h1>
+              <p class="current-day">
+                <span id="current-date-time"></span> <br />
+                <span id="description-weather"></span>
+              </p>
+            </div>
+            <div class="col-6">
+              <img
+                src="images/picture2.svg"
+                alt="Weather app"
+                class="nice-picture"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row" id="current-weather-information">
+          <div class="col-7 current-temp">
+            <img src="" alt="" class="weather-icon" id="icon" />
+            <span class="temperature" id="temperature"></span>
+            <span class="units"> °C</span>
+          </div>
+          <div class="col-5">
+            <ul>
+              <li id="first-li">Pressure: <span id="pressure"></span> hPa</li>
+              <li id="second-li">Humidity: <span id="humidity"></span> %</li>
+              <li id="third-li">Wind: <span id="wind"></span> m/sec</li>
+            </ul>
+          </div>
+        </div>
+        <div class="four-day-forecast" id="weather-forecast"></div>
+      </div>
+      <footer>
+       <!-- <a
+          class="name"
+          href="https://github.com/KaterynaTishchenko/my-weather-app"
+          target="_blank"
+          ><strong class="name">Open-source</strong>
+        </a>
+        by
+        <a
+          class="name"
+          href="https://www.linkedin.com/in/katerina-tishchenko-1686a4242"
+          target="_blank"
+        >
+          <strong class="name">Kateryna Tishchenko </strong>
+        </a>-->
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
